@@ -1,7 +1,7 @@
 <launch>
 
 	<include file = "$(find gazebo_ros)/launch/empty_world.launch"/>
-	<param name= "robot_description" textfile="$(find project_ulgen)/urdf/robot.urdf" />
+	<param name= "robot_description" command="$(find xacro)/xacro $(find project_ulgen)/urdf/robot.xacro" />
 	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args= "-param robot_description -urdf -model kutu_robot -z 0.2" />
 
 </launch>
