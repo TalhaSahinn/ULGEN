@@ -30,7 +30,7 @@
   <gazebo reference="lidar_link">
     <sensor type="gpu_ray" name="ulgen_3d_lidar">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>10</update_rate>
       <ray>
         <scan>
